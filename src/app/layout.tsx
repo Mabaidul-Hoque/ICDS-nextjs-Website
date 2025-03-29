@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +20,9 @@ export default function RootLayout({
         data-gr-ext-installed=""
         cz-shortcut-listen="true"
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
